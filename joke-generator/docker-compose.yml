@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: frontend-image:latest  # Replace with your frontend image
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=production
+
+  backend:
+    image: backend-image:latest  # Replace with your backend image
+    ports:
+      - '5000:5000'
+    environment:
+      - NODE_ENV=production
